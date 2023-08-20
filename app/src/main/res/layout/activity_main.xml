@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
+    app:layout_anchorGravity="center_vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -29,10 +30,11 @@
             android:textSize="22sp" />
 
         <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="150dp"
+            android:id="@+id/spinnerFrom"
+            android:layout_width="132dp"
             android:layout_height="49dp"
-            android:layout_margin="5dp" />
+            android:layout_margin="5dp"
+            android:background="@drawable/custuminput" />
 
         <TextView
             android:id="@+id/textView2"
@@ -44,11 +46,12 @@
             android:textSize="22sp" />
 
         <Spinner
-            android:id="@+id/spinner2"
+            android:id="@+id/spinnerTo"
             android:layout_width="150dp"
             android:layout_height="49dp"
             android:layout_margin="5dp"
             android:layout_weight="1"
+            android:background="@drawable/custuminput"
             android:scrollbarSize="6dp" />
     </LinearLayout>
 
@@ -64,7 +67,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editEalue"
+            android:id="@+id/editValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Value" />
@@ -77,7 +80,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="Convet"
+        android:text="Convert"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
